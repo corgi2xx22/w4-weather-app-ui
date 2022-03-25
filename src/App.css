@@ -13,9 +13,9 @@ body {
   font-family:Roboto, sans-serif; 
   color:#FF5F6D;
   background-image: url(./clouds-bg.jpeg);
-  background-size: 150%,150%;
+  background-size: 200%,200%;
   animation: background;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
