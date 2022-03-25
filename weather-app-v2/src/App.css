@@ -1,0 +1,90 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width:335px;
+  width:100%;
+  height:100%;
+  font-family:Roboto, sans-serif; 
+  color:#FF5F6D;
+  background-image: url(./clouds-bg.jpeg);
+  background-size: 400%, 400%;
+  animation: background;
+  animation-duration: 20s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 100%, 100%;
+  }
+}
+
+
+.container {
+  text-align: center;
+ 
+}
+.title {
+  margin-top: 40px;
+}
+.form-input {
+  width: 350px;
+  margin-bottom: 12px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.search-input {
+  padding: 8px 24px;
+  margin: 50px 8px 20px;
+  border-radius: 20px;
+}
+.submit-btn {
+  width: 30%;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: #00abb8;
+  color: #fff;
+  border: 1px solid #00abb8;
+  font-weight: 600;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #02d8e7;
+}
+
+.card-weather-info {
+  max-width: 350px;
+  height:200px;
+  margin: 0 auto;
+  padding:25px;
+  color:#f2f2f2;
+  border-radius:20px;
+  border-style:none;
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-around;
+}
+.label {
+  margin-bottom: 10px;
+}
